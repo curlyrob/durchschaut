@@ -25,6 +25,7 @@ main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
 /* Kopf */
 header { text-align: center; margin-bottom: 30px; }
 header img {
+  display: block; margin: 0 auto;
   width: 112px; height: 112px; border-radius: 26px;
   box-shadow: -4px -1px 0 var(--cyan), 4px 1px 0 var(--pink);
 }
