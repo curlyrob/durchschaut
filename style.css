@@ -31,26 +31,26 @@ header img {
 h1 {
   position: relative; display: inline-block; margin: 18px 0 10px;
   font: 900 clamp(1.5rem, 8vw, 2.6rem)/1.1 var(--mono); letter-spacing: -.02em; overflow-wrap: anywhere;
-  text-shadow: -3px 0 var(--cyan), 3px 0 var(--pink);
+  text-shadow: -2px 0 var(--cyan), 2px 0 var(--pink);
 }
 h1.glitch::before, h1.glitch::after {
   content: attr(data-text); position: absolute; inset: 0; pointer-events: none;
   text-shadow: none; background: transparent;
 }
-h1.glitch::before { color: var(--cyan); clip-path: inset(38% 0 46% 0); transform: translateX(-8px); }
-h1.glitch::after  { color: var(--text); clip-path: inset(62% 0 22% 0); transform: translateX(9px); }
+h1.glitch::before { color: var(--cyan); clip-path: inset(50% 0 50% 0); }
+h1.glitch::after  { color: var(--text); clip-path: inset(50% 0 50% 0); }
 @media (prefers-reduced-motion: no-preference) {
   h1.glitch::before { animation: slice-a 5s steps(1) infinite; }
   h1.glitch::after  { animation: slice-b 5s steps(1) infinite; }
 }
 @keyframes slice-a {
-  0%, 88%, 100% { clip-path: inset(38% 0 46% 0); transform: translateX(-8px); }
+  0%, 88%, 100% { clip-path: inset(50% 0 50% 0); transform: none; }
   90% { clip-path: inset(10% 0 70% 0); transform: translateX(10px); }
   93% { clip-path: inset(70% 0 12% 0); transform: translateX(-14px); }
   96% { clip-path: inset(45% 0 40% 0); transform: translateX(6px); }
 }
 @keyframes slice-b {
-  0%, 88%, 100% { clip-path: inset(62% 0 22% 0); transform: translateX(9px); }
+  0%, 88%, 100% { clip-path: inset(50% 0 50% 0); transform: none; }
   91% { clip-path: inset(20% 0 60% 0); transform: translateX(-12px); }
   94% { clip-path: inset(80% 0 4% 0); transform: translateX(14px); }
   97% { clip-path: inset(30% 0 55% 0); transform: translateX(-5px); }
