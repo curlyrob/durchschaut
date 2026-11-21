@@ -86,7 +86,7 @@ p:last-child { margin-bottom: 0; }
 strong { color: #fff; }
 .muted, small { color: var(--muted); }
 
-a { color: var(--cyan); text-underline-offset: 3px; }
+a { color: var(--cyan); text-underline-offset: 3px; overflow-wrap: anywhere; }
 a:hover { color: var(--yellow); }
 a:focus-visible { outline: 2px solid var(--yellow); outline-offset: 2px; }
 
